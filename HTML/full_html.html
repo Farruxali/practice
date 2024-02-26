@@ -8,6 +8,32 @@
         p {
             color: brown;
         }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        #name1 {
+            color: gold;
+        }
+
+        .name {
+            color: goldenrod;
+        }
+
+        #div1 {
+            background-color: rgb(196, 238, 79);
+        }
+
+        #qizil {
+            color: red;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -38,6 +64,149 @@
     <hr>
     havola <br>
     <a href="https://www.google.com">Google</a>
+    <hr>
+    rasm joylash <br>
+    <img src="image.jpg" alt="rasm bor" style="width: 400; height: 300;">
+    <hr>
+    jadval yaratish <br>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    #
+                </th>
+                <th>
+                    Ismi
+                </th>
+                <th>
+                    familasi
+                </th>
+                <th>
+                    yoshi
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    Javohir
+                </td>
+                <td>
+                    Alimov
+                </td>
+                <td>
+                    21
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    2
+                </td>
+                <td>
+                    baxtiyor
+                </td>
+                <td>
+                    karimov
+                </td>
+                <td>
+                    22
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    3
+                </td>
+                <td>
+                    Alisher
+                </td>
+                <td>
+                    Normatov
+                </td>
+                <td>
+                    21
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <hr><br>
+    ro'yhat yasash <br><br>
+    1. tartibsiz ro'yhat <br>
+    <h4>mevalar</h4>
+    <ul>
+        <li>
+            olma
+        </li>
+        <li>
+            gilos
+        </li>
+        <li>
+            anjir
+        </li>
+        <li>
+            sitrus mevalar
+            <ul>
+                <li>
+                    limon
+                </li>
+                <li>
+                    apilsin
+                </li>
+            </ul>
+        </li>
+    </ul>
+    2. tartibli ro'yhat <br>
+    <h4>Isimlar</h4>
+    <ol>
+        <li>
+            Jasur
+        </li>
+        <li>
+            Sanjar
+        </li>
+        <li>
+            Gulnora
+        </li>
+    </ol><hr>
+    ID berish<br>
+    <p id="name1">text1</p>
+    <p id="name2">text2</p><hr>
+    Class berishbr
+    <p>text1</p>
+    <p class="name">text2</p>
+    <p class="name">text3</p><hr>
+    div va span ishlatish <br>
+    <div id="div1">
+        <h2>
+            Hello one
+        </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, reiciendis quam dolorem deserunt <span id="qizil">error</span> aspernatur necessitatibus. Eveniet veniam cupiditate natus! Labore quibusdam quis perspiciatis provident est nemo quo enim laboriosam.</p>
+        <p>The end</p>
+    </div><hr>
+    Formalar <br><br>
+    <form action="/server.php" method="get">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username"><br><br>
+        <label for="password">password</label>
+        <input type="password" name="password" id="password"><br><br>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email"><br><br>
+        <label for="data">Tug'ilgan sana</label>
+        <input type="date" name="date" id="data"><br><br>
+        <label for="student">Talaba</label>
+        <input type="checkbox" name="student" id="student"><br><br>
+        <label for="erkak">Erkak</label>
+        <input type="radio" name="gender" value="male">
+        <label for="ayol">Ayol</label>
+        <input type="radio" name="gender" value="female"><br><br>
+        <label for="file">file yuklash</label>
+        <input type="file" name="file" id="file"><br><br>
+        <button type="submit">Register</button>
+    </form>
 
+
+    <br><br><br>
 </body>
 </html>
