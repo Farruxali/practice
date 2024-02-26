@@ -34,6 +34,41 @@
             color: red;
             font-weight: bold;
         }
+
+        .kuti {
+            background-color: blue;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        header, nav, footer {
+            height: 100px;
+            line-height: 100px;
+        }
+
+        nav, section, aside, footer {
+            margin-top: 1px;
+        }
+
+        section {
+            height: 500px;
+            line-height: 500px;
+            width: 70%;
+            float: left;
+        }
+
+        aside {
+            height: 500px;
+            line-height: 500px;
+            width: 30%;
+            float: left;
+        }
+
+        footer {
+            float: left;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -203,10 +238,46 @@
         <input type="radio" name="gender" value="female"><br><br>
         <label for="file">file yuklash</label>
         <input type="file" name="file" id="file"><br><br>
+        <label for="tajriba">Tajribangiz (yil)</label>
+        <select name="tajriba" id="tajriba">
+            <option value="0">Tajribasiz</option>
+            <option value="1">Bir va bir yildan kam</option>
+            <option value="2">Bir yildan ko'p</option>
+        </select><br><br>
+        <label for="about">O'zingiz haqingizda</label><br>
+        <textarea name="about" id="about" cols="30" rows="10"></textarea><br><br>
         <button type="submit">Register</button>
-    </form>
-
-
+    </form><br><hr>
+    Layouts and section <br>
+    <div>
+        <header class="kuti">
+            Header
+        </header>
+         <nav class="kuti">
+            Nav
+         </nav>
+         <section class="kuti">
+            Section
+         </section>
+         <aside class="kuti">
+            Aside
+         </aside>
+         <Footer class="kuti">
+            Footer
+         </Footer>
+    </div><br><br><hr>
+    audio, video va youtube ulash <br><br>
+    audio yuklash <br>
+    <audio controls>
+        <source src="./music.mp3" type="music/mp3">
+        music yo'q
+    </audio><br><br>
+    video yuklash <br>
+    <video width="640" height="360" controls>
+        <source src="./video.mp4" type="vide/mp4">
+        Video yo'q
+    </video><br><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QxtigSvGnD8?si=DgUxDOf8nfGNCtj-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <br><br><br>
 </body>
 </html>
